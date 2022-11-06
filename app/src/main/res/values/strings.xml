@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">StoreApps</string>
+    <string name="store">Store</string>
+    <string name="yourname">Your Name</string>
+    <string name="entername">please enter Your Name</string>
+    <string name="submit">Submit</string>
+
+    <string name="place">Tempat</string>
+    <string name="location">Location</string>
+    <string name="findmap">Find on maps</string>
+    <string name="seeMenu">See Menus</string>
+
+    <string name="pizza_t">
+        Papperoni pizza
+    </string>
+    <string name="pizza_p">
+        Cocok bagi anda yang ingin merasakan pizza original dengan taburan keju dan daging asap yang lezat
+    </string>
+    <string name="spageti_t">
+        Spaghetti
+    </string>
+    <string name="spageti_p">
+        Cocok bagi anda yang ingin merasakan spaghetti original dengan bumbu yang oriental
+    </string>
+    <string name="burger_t">
+        Burger
+    </string>
+    <string name="burger_p">
+        Cocok bagi anda yang ingin merasakan kelembutan burger berlapiskan keju, sayuran dan daging yang tebal
+    </string>
+    <string name="steak_t">
+        Steak
+    </string>
+    <string name="steak_p">
+        Cocok bagi anda yang ingin merasakan lezatnya daging steak dipadukan dengan kentang yang lezat
+    </string>
+
+    <string name="price">
+        Price: 70.000,00
+    </string>
+    <string name="desc_p">Pepperoni pizza adalah pizza yang memiliki topping daging pepperoni sapi asli. Di Italia,
+        pepperoni disebut salame piccante (salami panas). Biasa menjadi bahan baku pizza di Amerika Serikat, yang sering
+        mewakili 30% pelengkap. Pizza ini cocok untuk santap siang ataupun malam anda
+    </string>
+
+    <string name="deta">Order Detail</string>
+    <string name="kirim">Pengiriman</string>
+    <string name="ambil">Ambil Sendiri</string>
+    <string name="deli">Fast Delivery (minimal 30 menit sampai)</string>
+    <string name="done">Done</string>
+
+
+    <string-array name="spinn">
+        <item>Bandung</item>
+        <item>Jakarta</item>
+        <item>Jogja</item>
+        <item>Surabaya</item>
+        <item>Solo</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main3">MainActivity3</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="order">Order Now</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
