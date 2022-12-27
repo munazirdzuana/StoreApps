@@ -3,15 +3,14 @@ package lat.pam.storeapps;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity5 extends AppCompatActivity {
     public static String str;
+
+    Bundle extras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +21,7 @@ public class MainActivity5 extends AppCompatActivity {
 //        CharSequence text = "Hello toast!";
 //        int duration = Toast.LENGTH_SHORT;
 
-        Intent i=getIntent();
-        Bundle extras = i.getExtras();
+        extras = MainActivity3.getActivityInstance().getExrass();
         String nama=extras.getString("Nama");
         String lock=extras.getString("LOCK");
         String sand=extras.getString("pesan");
@@ -37,7 +35,7 @@ public class MainActivity5 extends AppCompatActivity {
         tv2.setText(lock);
         tv3.setText(tambah);
 
-        String gabung="Terima Kasih "+nama+"Sudah memesan Di toko Kami, pesanan "+sand+" dikirim menggunkan FaST delivery";
+        String gabung="Terima Kasih "+nama+" Sudah memesan Di toko Kami, pesanan "+sand+" dikirim menggunkan FaST delivery";
 
         Button btn1 = (Button) findViewById(R.id.button5);
         btn1.setOnClickListener(new View.OnClickListener() {

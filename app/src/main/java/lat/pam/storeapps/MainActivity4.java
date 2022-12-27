@@ -32,15 +32,16 @@ public class MainActivity4 extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)  {
                 Intent intent = new Intent(MainActivity4.this, MainActivity5.class);
+                intent.putExtras(extras);
                 startActivity(intent);
             }
         });
 
         Button btn2 = (Button) findViewById(R.id.button4);
         btn2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)  {
-                Intent i = new Intent(MainActivity4.this, MainActivity3.class);
-                startActivity(i);
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 

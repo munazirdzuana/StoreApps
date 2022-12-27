@@ -16,11 +16,15 @@ import lat.pam.storeapps.databinding.ActivityMain3Binding;
 
 public class MainActivity3 extends AppCompatActivity {
 
+    static MainActivity3 INSTANCE;
+
+    static Bundle extras;
     private AppBarConfiguration appBarConfiguration;
     private ActivityMain3Binding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        INSTANCE=this;
         super.onCreate(savedInstanceState);
 
         binding = ActivityMain3Binding.inflate(getLayoutInflater());
@@ -29,9 +33,8 @@ public class MainActivity3 extends AppCompatActivity {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
         getSupportActionBar().setCustomView(R.layout.toolbar);
-
         Intent i=getIntent();
-        Bundle extras = i.getExtras();
+        extras =i.getExtras();
         String name =extras.getString("Nama");
         extras.putString("pesan","Pizza Paperoni");
         String greting="Hello, "+name;
@@ -63,5 +66,12 @@ public class MainActivity3 extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public static MainActivity3 getActivityInstance(){
+        return INSTANCE;
+    }
+    public Bundle getExrass(){
+        return this.extras;
     }
 }

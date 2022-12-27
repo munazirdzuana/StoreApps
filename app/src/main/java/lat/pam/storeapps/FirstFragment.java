@@ -42,39 +42,7 @@ public class FirstFragment extends Fragment {
                 startActivity(i);
             }
         });
-        view.findViewById(R.id.spageti).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Bundle extrass=new Bundle();
-                extrass.putInt("pitzza",R.drawable.mpizza);
-                extrass.putInt("t",R.string.spageti_t);
-                extrass.putInt("p",R.string.spageti_p);
-                i.putExtras(extrass);
-                startActivity(i);
-            }
-        });
-        view.findViewById(R.id.burger).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Bundle extrass=new Bundle();
-                extrass.putInt("pitzza",R.drawable.mpizza);
-                extrass.putInt("t",R.string.burger_t);
-                extrass.putInt("p",R.string.burger_p);
-                i.putExtras(extrass);
-                startActivity(i);
-            }
-        });
-        view.findViewById(R.id.steak).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Bundle extrass=new Bundle();
-                extrass.putInt("pitzza",R.drawable.mpizza);
-                extrass.putInt("t",R.string.steak_t);
-                extrass.putInt("p",R.string.steak_p);
-                i.putExtras(extrass);
-                startActivity(i);
-            }
-        });
+
     }
 
     @Override
