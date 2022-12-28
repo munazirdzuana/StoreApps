@@ -15,3 +15,6 @@ https://retoolapi.dev/StWODX/uasresto
 ![Screenshot_2022-12-28-14-00-30-953_lam pam storeapps](https://user-images.githubusercontent.com/78277922/209772268-cb1873a7-fd8d-4639-897e-071604d58fef.jpg)
 ![Screenshot_2022-12-28-14-00-28-222_lam pam storeapps](https://user-images.githubusercontent.com/78277922/209772283-3044049a-e95d-44c6-99df-74b81fb29c0f.jpg)
 ![Screenshot_2022-12-28-14-00-42-886_lam pam storeapps](https://user-images.githubusercontent.com/78277922/209772291-0bb20a00-c675-407c-bd4b-16799bfab94e.jpg)
+
+## seluruh activity
+![image](https://user-images.githubusercontent.com/78277922/209773879-5ea86b0f-487a-40a7-81d3-b03ef40b1a41.png)
