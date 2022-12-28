@@ -22,10 +22,6 @@
             android:exported="true"
             android:theme="@style/NoActionBar" />
         <activity
-            android:name=".MainActivity3"
-            android:exported="true"
-            android:theme="@style/CustomTheme" />
-        <activity
             android:name=".MainActivity2"
             android:exported="true"
             android:theme="@style/CustomTheme" />
