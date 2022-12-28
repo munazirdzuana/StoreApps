@@ -34,22 +34,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/store"
             android:textAppearance="@style/font_list"
             app:layout_constraintLeft_toLeftOf="@id/deta"
             app:layout_constraintTop_toBottomOf="@id/nama_d"
     />
 
-    <TextView
-            android:id="@+id/cabang_loc"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="11dp"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="@style/font_list"
-            app:layout_constraintBaseline_toBaselineOf="@id/cabang"
-            app:layout_constraintLeft_toRightOf="@id/cabang"
-    />
     <TextView
             android:id="@+id/pesan"
             android:layout_width="0dp"
@@ -78,15 +67,14 @@
               android:layout_height="wrap_content"
               android:text="@string/ambil"
               app:layout_constraintLeft_toLeftOf="@id/pengiriman"
-              app:layout_constraintTop_toBottomOf="@id/pengiriman"
-              android:onClick="onCheckboxClicked"/>
+              app:layout_constraintTop_toBottomOf="@id/pengiriman"/>
+
     <CheckBox android:id="@+id/delivery"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="@string/deli"
               app:layout_constraintLeft_toLeftOf="@id/pengiriman"
-              app:layout_constraintTop_toBottomOf="@id/ambil"
-              android:onClick="onCheckboxClicked"/>
+              app:layout_constraintTop_toBottomOf="@id/ambil"/>
 
     <Button
 

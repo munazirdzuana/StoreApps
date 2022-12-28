@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+        <ImageView android:id="@+id/pict"
+                   android:layout_width="121dp"
+                   android:layout_height="121dp"
+                   android:layout_marginStart="@dimen/margin_wide"
+                   android:layout_marginTop="5dp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+        />
+        <TextView
+                android:id="@+id/titlee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_wide"
+                android:textAppearance="@style/font"
+                app:layout_constraintStart_toEndOf="@id/pict"
+                app:layout_constraintTop_toTopOf="@+id/pict"
+        />
+        <TextView
+                android:id="@+id/dess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_wide"
+                android:layout_marginStart="@dimen/margin_wide"
+                android:textAppearance="@style/font_list"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/pict"
+                app:layout_constraintTop_toBottomOf="@id/titlee"/>
+
+        <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_wide"
+                android:textAppearance="@style/font"
+                app:layout_constraintEnd_toEndOf="@id/dess"
+                app:layout_constraintTop_toBottomOf="@+id/dess"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

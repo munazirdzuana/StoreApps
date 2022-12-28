@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 Intent i = new Intent(MainActivity.this,MainActivity2.class);
-                String name=editText.getText().toString();
+                String name= editText.getText().toString();
                 String text = List.getSelectedItem().toString();
                 extras.putString("Nama",name);
                 extras.putString("LOCK",text);

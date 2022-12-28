@@ -21,21 +21,23 @@ public class MainActivity5 extends AppCompatActivity {
 //        CharSequence text = "Hello toast!";
 //        int duration = Toast.LENGTH_SHORT;
 
-        extras = MainActivity3.getActivityInstance().getExrass();
+        Intent i=getIntent();
+        extras = MainActivity2.getActivityInstance().getExrass();
+        Bundle extras2=i.getExtras();
         String nama=extras.getString("Nama");
         String lock=extras.getString("LOCK");
-        String sand=extras.getString("pesan");
+        String sand=extras2.getString("judul");
 
         TextView tv1=findViewById(R.id.nama_d);
-        TextView tv2=findViewById(R.id.cabang_loc);
+        TextView tv2=findViewById(R.id.cabang);
         TextView tv3=findViewById(R.id.pesan);
 
         String tambah=sand+" telah Di pesan";
-        tv1.setText(nama);
-        tv2.setText(lock);
+        tv1.setText("Atas Nama  : "+nama);
+        tv2.setText("Toko             : "+lock);
         tv3.setText(tambah);
 
-        String gabung="Terima Kasih "+nama+" Sudah memesan Di toko Kami, pesanan "+sand+" dikirim menggunkan FaST delivery";
+        String gabung="Terima Kasih "+nama+" Sudah memesan Di toko Kami, Dengan pesanan "+sand;
 
         Button btn1 = (Button) findViewById(R.id.button5);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -45,31 +47,5 @@ public class MainActivity5 extends AppCompatActivity {
             }
         });
 
-    }
-
-    public void onCheckboxClicked(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-
-        // Check which checkbox was clicked
-        switch(view.getId()) {
-            case R.id.ambil:
-                if (checked){
-                    str="Ambil";
-                }
-                // Put some meat on the sandwich
-            else
-                // Remove the meat
-                break;
-            case R.id.delivery:
-                if (checked){
-                    str="FAST DELIVERY";
-                }
-                // Cheese me
-            else
-                // I'm lactose intolerant
-                break;
-            // TODO: Veggie sandwich
-        }
     }
 }
