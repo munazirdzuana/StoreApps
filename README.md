@@ -1,5 +1,7 @@
 # StoreApps
 Dibuat untuk menyelesaikan Uas PAM 
+Nama : Munazir Dzuana S
+NIM  : 1207050085
 
 ## Soal Uas 
 Dengan menggunakan desain yang telah dikerjakan pada UTS kemarin silahkan anda membuat 
